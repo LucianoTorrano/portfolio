@@ -1,11 +1,11 @@
 const animationContainer = document.getElementById('canvas-container');
 const canvas2 = document.getElementById('canvas-particle-mouse');
+const bodyContainer = document.getElementById('body')
 const nav2 = document.getElementById('nav');
 const c2 = canvas2.getContext('2d');
 
 canvas2.width = animationContainer.offsetWidth;
 canvas2.height = animationContainer.offsetHeight;
-
 const mouse2 = {
     x:null,
     y:null,
@@ -16,16 +16,17 @@ const particleColor= 'rgba(1,248,152,1)'
 const dx= canvas2.height/canvas2.width;
 
 let relativeMousePosX = (window.innerWidth - nav2.offsetWidth)/2;
-
+let relativeMousePosY;
 
 //evenlisteners
+
+document.addEventListener('scroll',()=>{
+    console.log(window.scrollY , animationContainer.offsetTop);
+    relativeMousePosY = animationContainer.offsetTop - window.scrollY;
+})
 addEventListener('mousemove', (event)=>{
-    let relativeMousePosY = Math.abs(scrollY - canvas2.height)/11;
     mouse2.x = event.x - relativeMousePosX;
     mouse2.y = event.y - relativeMousePosY;
-    console.log(window.scrollY)
-    console.log(relativeMousePosY)
-
 });
 addEventListener('resize', ()=>{
     canvas2.width = animationContainer.offsetWidth;
