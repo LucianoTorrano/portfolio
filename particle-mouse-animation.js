@@ -21,7 +21,6 @@ let relativeMousePosY;
 //evenlisteners
 
 document.addEventListener('scroll',()=>{
-    console.log(window.scrollY , animationContainer.offsetTop);
     relativeMousePosY = animationContainer.offsetTop - window.scrollY;
 })
 addEventListener('mousemove', (event)=>{

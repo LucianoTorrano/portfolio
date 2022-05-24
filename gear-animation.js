@@ -11,6 +11,11 @@ canvas.width = body.offsetWidth;
 canvas.height = container.offsetHeight;
 
 let relativeGearPosX = (canvas.width - nav.offsetWidth)/2;
+let relativeMousePosY2;
+
+document.addEventListener('scroll', ()=>{
+    relativeMousePosY2 = body.offsetTop - window.scrollY;
+})
 
 window.addEventListener('resize',()=>{
     canvas.width = container.offsetWidth;
@@ -33,7 +38,7 @@ const movementSpeed = .5;
 
 addEventListener('mousemove',(e)=>{
     mouse.x = e.x;
-    mouse.y = e.y;
+    mouse.y = e.y - relativeMousePosY2;
 });
 
 class ObjectBG{

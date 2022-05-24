@@ -12,14 +12,22 @@
     --title-size: 3.5em;
     --subtitle-size: 2em;
     --work-title-size: 1.8em;
+    --gray-color: #1c1c1c;
 }
-.black{
-    color: black;
+
+/* BARRA DE SCROLL */
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--gray-color);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--green-detail-color);
 }
 
 #body{
     background-color: black;
     min-height: 100vh;
+    cursor: url(img/mouse-pointer.svg),auto;
 }
 .page-container{
     background-color: black;
@@ -227,6 +235,25 @@
 .button-works{
     border-radius: 0;
     background-color: var(--green-detail-color);
+    position: relative;
+}
+.button-works::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: .3s;
+    background-color: white;
+}
+.button-works:hover::after{
+    width: 100%;
+}
+.button-works:hover{
+    background-color: var(--button-bg-green);
+    transition: .5s;
+    box-shadow: 0 0px 15px 2px rgba(0, 0, 0, .7);
 }
 .proyect-img{
     filter: grayscale(100%);
@@ -236,6 +263,12 @@
     filter: none;
     transition: .4s;
 }
+.black-work-hover:hover{
+    background-color: black;
+    transition: .5s;
+    box-shadow: none;
+}
+
 .see-more-btn-container{
     display: flex;
     align-items: center;
@@ -254,6 +287,7 @@
     align-items: center;
 }
 
+
 /***************************/
 /** CANVAS MOUSE PARTICLE **/
 /***************************/
@@ -262,8 +296,19 @@
     min-height: 100vh;
     z-index: 500;
     width: 100%;
+    cursor: none;
 }
 #canvas-particle-mouse{
     z-index: 10;
     position: absolute;
+}
+
+.black{
+    color: black;
+}
+.white{
+    color: white;
+}
+.gray-bg{
+    background-color: var(--gray-color);
 }
