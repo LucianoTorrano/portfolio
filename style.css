@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --text-color: #ffffff;
+    --button-bg-green: #01F897;
+    --green-detail-color: #25A171;
+    --title-size: 3.5em;
+    --subtitle-size: 2em;
+    --work-title-size: 1.8em;
+}
+.black{
+    color: black;
+}
+
+#body{
+    background-color: black;
+    min-height: 100vh;
+}
+.page-container{
+    background-color: black;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: auto;
+    color: var(--text-color);
+}
+/***********/
+/* NAV BAR */
+/***********/
+.nav{
+    height: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 20% 65%;
+    padding: 15px 20px;
+    z-index: 450;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+.nav-options-list, .button-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style: none;
+    align-items: center;
+    padding-top: 8px ;
+    gap: 60px;
+}
+.line-hover{
+    position: relative;
+    padding-bottom: 5px;
+}
+.line-hover::after{
+    content: '';
+    position: absolute;
+    background-color: var(--green-detail-color);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: .3s;
+}
+.line-hover:hover::after{
+    width: 100%;
+}
+.link{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.button{
+    background-color: var(--button-bg-green);
+    color: black;
+    padding: 8px;
+    border-radius: 3px;
+    font-weight: 600;
+
+}
+.button-list{
+    justify-content: start;
+    gap: 30px;
+}
+/****************/
+/* HERO SECTION */
+/****************/
+.hero{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.text-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 60%;
+    margin-top: 150px;
+    z-index: 300;
+    padding-left: 20px;
+}
+.title{
+    font-size: var(--title-size);
+}
+.subtitle{
+    font-size: var(--subtitle-size);
+    color: var(--text-color);
+}
+.gear{
+    display: none;
+}
+.gear-canvas{
+    position: absolute;
+    z-index: 20;
+}
+.splash-bg,.banner-img{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 950px;
+    z-index: 300;
+}
+.banner-img{
+    margin-top: 100px;
+    right: 20px;
+    width: 600px;
+}
+
+/*****************/
+/* ABOUT SECTION */
+/*****************/
+
+.about{
+    min-height: 100vh;
+    width: 100%;
+    color: var(--text-color);
+    z-index: 400;
+    margin-top: 20px ;
+    padding: 60px 0 0 140px;
+    position: relative;
+}
+.about-text{
+    max-width: 400px;
+    text-align: start;
+    margin: auto;
+    padding-top: 50px;
+}
+.guitar-img{
+    position: absolute;
+    right: 0;
+    top: 550px;
+    width: 300px;
+}
+.video-game-img{
+    position: absolute;
+    left: 0;
+    top: 450px;
+}
+
+/*****************/
+/* WORKS SECTION */
+/*****************/
+
+.works{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 200;
+    padding-top: 150px;
+}
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.title-line{
+    height: 2px;
+    background-color: var(--green-detail-color);
+    width: 300px;
+}
+.works-list{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    margin: 100px 0;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    z-index: 50;
+}
+.works-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    z-index: 50;
+}
+.works-item-title{
+    text-align: center;
+    font-size: var(--work-title-size);
+}
+.works-item-title,.technologies-text,.button-works{
+    font-weight: 200;
+}
+.works-info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.technologies-text{
+    font-size: 1.2em;
+}
+.technologies{
+    display: flex;
+    gap: 15px;
+}
+.technologies-list{
+    display: flex;
+    gap: 15px;
+}
+.button-works{
+    border-radius: 0;
+    background-color: var(--green-detail-color);
+}
+.proyect-img{
+    filter: grayscale(100%);
+    transition: .4s;
+}
+.proyect-img:hover{
+    filter: none;
+    transition: .4s;
+}
+.see-more-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+.see-more-btn{
+    background-color: black;
+    padding: 15px 30px;
+    border-radius: 3px;
+}
+.see-more-link{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/***************************/
+/** CANVAS MOUSE PARTICLE **/
+/***************************/
+#canvas-container{
+    position: relative;
+    min-height: 100vh;
+    z-index: 500;
+    width: 100%;
+}
+#canvas-particle-mouse{
+    z-index: 10;
+    position: absolute;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciano Torrano Portfolio</title>
+    <link rel="shortcut icon" href="img/window-logo.svg"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <img src="img/tuerca.png" alt="tuerca" id="gear-big" class="gear">
+    <img src="img/tuerca-mediana.png" alt="tuerca" id="gear-medium" class="gear">
+    <img src="img/tuerca-chica.png" alt="tuerca" id="gear-small" class="gear">
+    <canvas class="gear-canvas" id="canvas"></canvas>
+    <div class="page-container">
+        <nav class="nav" id="nav">
+            <div class="logo-container">
+                <a href="#"><img src="img/nav-logo.svg" alt="Luciano Torrano logo"></a>
+            </div>
+            <div class="space-between"></div>
+            <div class="nav-options">
+                <ul class="nav-options-list">
+                    <li class="nav-option-item"><a href="#" class="link line-hover">Home</a></li>
+                    <li class="nav-option-item"><a href="#about" class="link line-hover">About me</a></li>
+                    <li class="nav-option-item"><a href="#works" class="link line-hover">Works</a></li>
+                    <li class="nav-option-item"><a href="#contact" class="button link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero" id="home">
+            <img src="img/background-splash.svg" alt="splash" class="splash-bg">
+            <img src="img/banner-img.svg" alt="me coding animated" class="banner-img">
+            <div class="text-container">
+                <h1 class="title">Front-end developer</h1>
+                <h2 class="subtitle">Web Designer - UX/UI</h2>
+                <div class="button-container">
+                    <ul class="button-list">
+                        <li class="nav-option-item"><a href="#" class="button link" target="__blank">My CV</a></li>
+                        <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" target="__blank"><img src="img/github-logo.svg" alt="logo de github"></a></li>
+                        <li class="nav-option-item"><a href="#contact" class="button link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <img src="img/guitar.svg" alt="playing guitar" class="guitar-img">
+            <img src="img/video-game-img.svg" alt="playing video-games" class="video-game-img">
+            <h2 class="title">About <span class="black">Me</span></h2>
+            <p class="about-text"> Hola! Me llamo Luciano, soy estudiante de ingeniería electrónica en la Universidad de Buenos Aires, lugar donde aprendí mis primeros lenguajes de programación (C y C++). Con el pasar de los años encontré una nueva pasión por el desarrollo web.
+                <br><br>Comencé a estudiar de forma autodidacta, lo que me llevo a crear mis primeras páginas web. Disfruto aprender nuevas tecnologías y de esta forma tener más herramientas para mis futuros proyectos. 
+                <br><br>Actualmente estoy buscando mi primera experiencia laboral. Espero ser el perfil que estas buscando, en el caso de serlo, no dudes en contactarme.
+              </p>
+        </section>
+
+        <section class="works" id="works">
+            <div class="title-container">
+                <h2 class="title">Some of my works</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="canvas-mouse-container" id="canvas-container">
+                <canvas id="canvas-particle-mouse"></canvas>
+                <ul class="works-list">
+                    <li class="works-item">
+                        <a href="#"><img src="img/probermusic.jpg" alt="probermusic" class="proyect-img"></a>
+                        <div class="works-info-container">
+                            <h3 class="works-item-title">Music productor website</h3>
+                            <div class="technologies">
+                                <h4 class="technologies-text">Technologies:</h4>
+                                <ul class="technologies-list">
+                                    <img src="img/html-logo.svg" alt="HTML5 Logo">
+                                    <img src="img/javascript-logo.svg" alt="Javascript Logo">
+                                    <img src="img/css-logo.svg" alt="CSS3 Logo">
+                                </ul>
+                            </div>
+                            <ul class="button-list">
+                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="__blank">Online view</a></li>
+                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="__blank">Figma Design</a></li>
+                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="_blank">Git Repository</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="works-item">
+                        <div class="works-info-container">
+                            <h3 class="works-item-title">Music productor website</h3>
+                            <div class="technologies">
+                                <h4 class="technologies-text">Technologies:</h4>
+                                <ul class="technologies-list">
+                                    <img src="img/html-logo.svg" alt="HTML5 Logo">
+                                    <img src="img/javascript-logo.svg" alt="Javascript Logo">
+                                    <img src="img/css-logo.svg" alt="CSS3 Logo">
+                                </ul>
+                            </div>
+                            <ul class="button-list">
+                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="__blank">Online view</a></li>
+                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="__blank">Figma Design</a></li>
+                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="_blank">Git Repository</a></li>
+                            </ul>
+                        </div>
+                        <a href="#"><img src="img/probermusic.jpg" alt="probermusic" class="proyect-img"></a>
+                    </li>
+                    <li class="works-item">
+                        <a href="#"><img src="img/probermusic.jpg" alt="probermusic" class="proyect-img"></a>
+                        <div class="works-info-container">
+                            <h3 class="works-item-title">Music productor website</h3>
+                            <div class="technologies">
+                                <h4 class="technologies-text">Technologies:</h4>
+                                <ul class="technologies-list">
+                                    <img src="img/html-logo.svg" alt="HTML5 Logo">
+                                    <img src="img/javascript-logo.svg" alt="Javascript Logo">
+                                    <img src="img/css-logo.svg" alt="CSS3 Logo">
+                                </ul>
+                            </div>
+                            <ul class="button-list">
+                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="__blank">Online view</a></li>
+                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="__blank">Figma Design</a></li>
+                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="_blank">Git Repository</a></li>
+                            </ul>
+                        </div>
+                    </li>                
+                </ul>
+                <div class="see-more-btn-container">
+                    <div class="see-more-btn">
+                        <a href="#" class="link see-more-link"><p>See More </p><img src="img/link-icon.svg"></a>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section class="contact" id="contact"></section>
+    </div>
+    <script src="gear-animation.js"></script>
+    <script src="particle-mouse-animation.js"></script>
+</body>
+</html>
