@@ -12,11 +12,11 @@ const mouse2 = {
     positionTopImg:true,
     positionBottomImg:false
 };
-const particleColor= 'rgba(1,248,152,1)'
+const particleColor= '#1ED48E'
 const dx= canvas2.height/canvas2.width;
 
 let relativeMousePosX = (window.innerWidth - nav2.offsetWidth)/2;
-let relativeMousePosY;
+let relativeMousePosY=0;
 
 //evenlisteners
 
@@ -141,7 +141,7 @@ function connect(){
                 if(mouse2.positionBottomImg){
                     c2.strokeStyle = `rgba(0,0,0,${opacityValue})`;                    
                 }
-                if(mouse2.positionTopImg) c2.strokeStyle = `rgba(1,248,151,${opacityValue})`;
+                if(mouse2.positionTopImg) c2.strokeStyle = `rgba(30,212,142,${opacityValue})`;
                 c2.beginPath();
                 c2.lineWidth = 1;
                 c2.moveTo(particleArray[i].x,particleArray[i].y);

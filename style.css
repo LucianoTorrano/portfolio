@@ -13,8 +13,12 @@
     --subtitle-size: 2em;
     --work-title-size: 1.8em;
     --gray-color: #1c1c1c;
+    --skills-text-color: #000000;
+    --contact-text-color: #cfcfcf;
 }
-
+a{
+    cursor: url(img/mouse-hand-pointer.svg), auto;
+}
 /* BARRA DE SCROLL */
 body::-webkit-scrollbar{
     width: 10px;
@@ -256,7 +260,7 @@ body::-webkit-scrollbar-thumb{
     box-shadow: 0 0px 15px 2px rgba(0, 0, 0, .7);
 }
 .proyect-img{
-    filter: grayscale(100%);
+    filter: sepia(80%) hue-rotate(98deg) /*grayscale(100%)*/;
     transition: .4s;
 }
 .proyect-img:hover{
@@ -273,7 +277,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px;
+    margin-top: 50px;
 }
 .see-more-btn{
     background-color: black;
@@ -311,4 +315,82 @@ body::-webkit-scrollbar-thumb{
 }
 .gray-bg{
     background-color: var(--gray-color);
+}
+
+
+/*********************/
+/** CONTACT SECTION **/
+/*********************/
+
+.contact{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    padding-top: 100px;
+    cursor: url('img/mouse-pointer-contact.svg'),auto;
+}
+.contact-title-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--skills-text-color);
+    align-self: flex-start;
+}
+.skills,.contact-container{
+    z-index: 200;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.alignment-skills-title{
+    width: 350px;
+}
+.top-line,.bottom-line{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: end;
+    height: 3px;
+}
+.bottom-line{
+    justify-content: start;
+}
+.middle-line{
+    width: 10%;
+    background-color: var(--skills-text-color);
+}
+.right-line,.left-line{
+    width: 35%;
+    background-color: var(--skills-text-color);
+}
+.skills-list,.social-media-list{
+    width: 350px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    gap: 30px;
+}
+.skills-item img{
+    height: 50px;
+    width: 50px;
+}
+.social-media-list{
+    justify-content: start;
+    margin: 0;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 40px;
+}
+.canvas-contact{
+    position: absolute;
 }

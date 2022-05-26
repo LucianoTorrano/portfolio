@@ -11,7 +11,7 @@ canvas.width = body.offsetWidth;
 canvas.height = container.offsetHeight;
 
 let relativeGearPosX = (canvas.width - nav.offsetWidth)/2;
-let relativeMousePosY2;
+let relativeMousePosY2=0;
 
 document.addEventListener('scroll', ()=>{
     relativeMousePosY2 = body.offsetTop - window.scrollY;
