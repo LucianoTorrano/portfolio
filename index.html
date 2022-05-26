@@ -145,40 +145,40 @@
                     </div>
                 </div>
                 <ul class="skills-list">
-                    <li class="skills-item">
+                    <li class="skills-item" id="html-logo">
                         <img src="img/html-logo-black.svg" alt="javascript logo">
                     </li>
-                    <li class="skills-item">
+                    <li class="skills-item" id="css-logo">
                         <img src="img/css-logo-black.svg" alt="javascript logo">
                     </li>
-                    <li class="skills-item">
+                    <li class="skills-item" id="javascript-logo">
                         <img src="img/javascript-logo-black.svg" alt="javascript logo">
                     </li>
-                    <li class="skills-item">
+                    <li class="skills-item" id="nodejs-logo">
                         <img src="img/nodejs-logo-black.svg" alt="javascript logo">
                     </li>
-                    <li class="skills-item">
+                    <li class="skills-item" id="express-logo">
                         <img src="img/express-logo-black.svg" alt="javascript logo">
                     </li>
-                    <li class="skills-item">
+                    <li class="skills-item" id="figma-logo">
                         <img src="img/figma-logo-black.svg" alt="javascript logo">
                     </li>
-                    <li class="skills-item">
+                    <li class="skills-item" id="git-logo">
                         <img src="img/git-logo-svg.svg" alt="javascript logo">
                     </li>
-                    <li class="skills-item">
+                    <li class="skills-item" id="git-bash-logo">
                         <img src="img/git-bash-logo-black.svg" alt="javascript logo">
                     </li>
-                    <li class="skills-item">
+                    <li class="skills-item" id="vsc-logo">
                         <img src="img/vsc-logo-black.svg" alt="javascript logo">
                     </li>
-                    <li class="skills-item">
+                    <li class="skills-item" id="sublime-logo">
                         <img src="img/sublime-logo-black.svg" alt="javascript logo">
                     </li>
-                    <li class="skills-item">
+                    <li class="skills-item" id="c-logo">
                         <img src="img/c-logo-black.svg" alt="javascript logo">
                     </li>
-                    <li class="skills-item">
+                    <li class="skills-item" id="cplus-logo">
                         <img src="img/cplusplus-logo-black.svg" alt="javascript logo">
                     </li>
                 </ul>
@@ -193,15 +193,36 @@
             <div class="contact-container">
                 <div class="contact-title-container">
                     <div class="top-line">
-                        <div class="middle-line"></div>
-                        <div class="right-line"></div>
+                        <div class="middle-line contact-line-bg"></div>
+                        <div class="right-line contact-line-bg"></div>
                     </div>
-                    <h2 class="title">Contact</h2>
+                    <h2 class="title contact-title">Contact</h2>
                     <div class="bottom-line">
-                        <div class="left-line"></div>
-                        <div class="middle-line"></div>
+                        <div class="left-line contact-line-bg"></div>
+                        <div class="middle-line contact-line-bg"></div>
                     </div>
                 </div>
+                <form action="" class="form">
+                    <div class="name-container form-container">
+                        <label for="Nombre" class="name-label">Name*</label>
+                        <input type="text" name="name" class="cursor-text" required>
+                    </div>
+                    <div class="mail-container form-container">
+                        <label for="Email" class="name">E-mail <span class="mail-example">(example@example.com)</span>*</label>
+                        <input type="email" name="email" class="cursor-text" required>    
+                    </div>
+                    <div class="company-container form-container">
+                        <label for="" class="company-label">Company</label>
+                        <input type="text" name="company" class="cursor-text">
+                    </div>
+                    <div class="msg-container form-container">
+                        <label for="" class="msg-label">Message*</label>
+                        <textarea name="message" id="" cols="70" rows="10" class="cursor-text" required></textarea>
+                    </div>
+                    <div class="form-button-container">
+                        <input type="submit" value="Send Message" class="form-button">
+                    </div>
+                </form>
             </div>
         </section>
     </div>
