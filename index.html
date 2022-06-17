@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="img/window-logo.svg"/>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="gear-animation.js"></script>
+    <script defer src="particle-mouse-animation.js"></script>
+    <script defer src="contact-bg.js"></script>
 </head>
 <body id="body">
     <img src="img/tuerca.png" alt="tuerca" id="gear-big" class="gear">
@@ -17,7 +20,7 @@
     <div class="page-container">
         <nav class="nav" id="nav">
             <div class="logo-container">
-                <a href="#"><img src="img/nav-logo.svg" alt="Luciano Torrano logo"></a>
+                <a href="#"><img loading="lazy" src="img/nav-logo.svg" alt="Luciano Torrano logo"></a>
             </div>
             <div class="space-between"></div>
             <div class="nav-options">
@@ -25,28 +28,28 @@
                     <li class="nav-option-item"><a href="#" class="link line-hover">Home</a></li>
                     <li class="nav-option-item"><a href="#about" class="link line-hover">About me</a></li>
                     <li class="nav-option-item"><a href="#works" class="link line-hover">Works</a></li>
-                    <li class="nav-option-item"><a href="#contact" class="button link">Contact</a></li>
+                    <li class="nav-option-item hero-button"><a href="#contact" class="button link">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <section class="hero" id="home">
-            <img src="img/background-splash.svg" alt="splash" class="splash-bg">
-            <img src="img/banner-img.svg" alt="me coding animated" class="banner-img">
+            <img loading="lazy" src="img/background-splash.svg" alt="splash" class="splash-bg">
+            <img loading="lazy" src="img/banner-img.svg" alt="me coding animated" class="banner-img">
             <div class="text-container">
                 <h1 class="title">Front-end developer</h1>
                 <h2 class="subtitle">Web Designer - UX/UI</h2>
                 <div class="button-container">
                     <ul class="button-list">
-                        <li class="nav-option-item"><a href="#" class="button link" target="__blank">My CV</a></li>
-                        <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" target="__blank"><img src="img/github-logo.svg" alt="logo de github"></a></li>
-                        <li class="nav-option-item"><a href="#contact" class="button link">Contact</a></li>
+                        <li class="nav-option-item  hero-button"><a title="My cv" href="#" class="button link light-gray-bg hero-button" target="__blank">My CV</a></li>
+                        <li class="nav-option-item"><a title="Github" href="https://github.com/LucianoTorrano" target="__blank"><img loading="lazy" src="img/github-logo.svg" alt="logo de github"></a></li>
+                        <li class="nav-option-item hero-button"><a title="Contact me" href="#contact" class="button link">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </section>
         <section class="about" id="about">
-            <img src="img/guitar.svg" alt="playing guitar" class="guitar-img">
-            <img src="img/video-game-img.svg" alt="playing video-games" class="video-game-img">
+            <img loading="lazy" src="img/guitar.svg" alt="playing guitar" class="guitar-img">
+            <img loading="lazy" src="img/video-game-img.svg" alt="playing video-games" class="video-game-img">
             <h2 class="title">About <span class="black">Me</span></h2>
             <p class="about-text"> Hola! Me llamo Luciano, soy estudiante de ingeniería electrónica en la Universidad de Buenos Aires, lugar donde aprendí mis primeros lenguajes de programación (C y C++). Con el pasar de los años encontré una nueva pasión por el desarrollo web.
                 <br><br>Comencé a estudiar de forma autodidacta, lo que me llevo a crear mis primeras páginas web. Disfruto aprender nuevas tecnologías y de esta forma tener más herramientas para mis futuros proyectos. 
@@ -62,7 +65,7 @@
                 <canvas id="canvas-particle-mouse"></canvas>
                 <ul class="works-list">
                     <li class="works-item">
-                        <a href="#"><img src="img/probermusic.jpg" alt="probermusic" class="proyect-img"></a>
+                        <a title="Probermusic website" target="_blank" href="https://www.probermusic.com"><img src="img/probermusic.jpg" alt="probermusic" class="proyect-img"></a>
                         <div class="works-info-container">
                             <h3 class="works-item-title">Music productor website</h3>
                             <div class="technologies">
@@ -74,15 +77,15 @@
                                 </ul>
                             </div>
                             <ul class="button-list">
-                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="__blank">Online view</a></li>
-                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="__blank">Figma Design</a></li>
-                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="__blank">Git Repository</a></li>
+                                <li class="nav-option-item"><a title="Probermusic website" target="_blank" href="https://www.probermusic.com" class="button link button-works">Online view</a></li>
+                                <li class="nav-option-item"><a title="Probermusic Figma Design" href="https://www.figma.com/file/jFMm3eihh7UpaMRTXyCOEz/Probermusic-web?node-id=0%3A1" target="_blank" class="button link button-works">Figma Design</a></li>
+                                <li class="nav-option-item"><a title="Probermusic github repository" href="https://github.com/LucianoTorrano/probermusic" target="_blank" class="button link button-works">Git Repository</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="works-item">
                         <div class="works-info-container">
-                            <h3 class="works-item-title">Music productor website</h3>
+                            <h3 class="works-item-title">Natural Warehouse website</h3>
                             <div class="technologies">
                                 <h4 class="technologies-text">Technologies:</h4>
                                 <ul class="technologies-list">
@@ -92,17 +95,17 @@
                                 </ul>
                             </div>
                             <ul class="button-list">
-                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="__blank">Online view</a></li>
-                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="__blank">Figma Design</a></li>
-                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works" target="_blank">Git Repository</a></li>
+                                <li class="nav-option-item"><a title="Todo Re-suelto website" href="https://www.todoresueltocampana.com.ar" class="button link button-works" target="_blank">Online view</a></li>
+                                <li class="nav-option-item"><a title="Todo Re-suelto figma design" href="https://www.figma.com/file/mmca7B6k7A5HBmB3BgGFxU/Todo-Re-Suelto?node-id=0%3A1" class="button link button-works" target="_blank">Figma Design</a></li>
+                                <li class="nav-option-item"><a title="Todo Re-suelto github repository" href="https://github.com/LucianoTorrano/TRS-prototype" class="button link button-works" target="_blank">Git Repository</a></li>
                             </ul>
                         </div>
-                        <a href="#"><img src="img/todoresuelto.jpg" alt="probermusic" class="proyect-img"></a>
+                        <a title="Todo Re-suelto website" href="https://www.todoresueltocampana.com.ar" target="_blank"><img src="img/todoresuelto.jpg" alt="probermusic" class="proyect-img"></a>
                     </li>
                     <li class="works-item">
-                        <a href="#"><img src="img/cinematic-films.jpg" alt="probermusic" class="proyect-img"></a>
+                        <a href="https://films-to-see.herokuapp.com/" target="_blank"><img src="img/save-your-films.jpg" alt="probermusic" class="proyect-img"></a>
                         <div class="works-info-container">
-                            <h3 class="works-item-title black">Music productor website</h3>
+                            <h3 class="works-item-title black">Natural Warehouse website</h3>
                             <div class="technologies">
                                 <h4 class="technologies-text black">Technologies:</h4>
                                 <ul class="technologies-list">
@@ -112,17 +115,17 @@
                                 </ul>
                             </div>
                             <ul class="button-list">
-                                <li class="nav-option-item"><a href="https://github.com/LucianoTorrano" class="button link button-works gray-bg white black-work-hover" target="__blank">Online view</a></li>
-                                <li class="nav-option-item black-bg"><a href="https://github.com/LucianoTorrano" class="button link button-works gray-bg white black-work-hover" target="__blank">Figma Design</a></li>
-                                <li class="nav-option-item black-bg"><a href="https://github.com/LucianoTorrano" class="button link button-works gray-bg white black-work-hover" target="_blank">Git Repository</a></li>
+                                <li class="nav-option-item"><a title="Save your Films website" href="https://films-to-see.herokuapp.com/" class="button link button-works gray-bg white black-work-hover" target="_blank">Online view</a></li>
+                                <li class="nav-option-item black-bg"><a title="Save your Films Figma Design" href="https://www.figma.com/file/QhfwpyF63HZSplD8wGmzkz/Films-website?node-id=0%3A1" class="button link button-works gray-bg white black-work-hover" target="_blank">Figma Design</a></li>
+                                <li class="nav-option-item black-bg"><a title="Save your Films Github repository" href="https://github.com/LucianoTorrano" class="button link button-works gray-bg white black-work-hover" target="_blank">Git Repository</a></li>
                             </ul>
                         </div>
                     </li>                
                 </ul>
                 <div class="see-more-btn-container">
-                    <a href="#" class="link see-more-btn">
+                    <a href="#" class="link see-more-btn button-works gray-bg white black-work-hover">
                         <div class=" see-more-link">
-                            <p>See More </p><img src="img/link-icon.svg">
+                            <p>See More </p><img loading="lazy" src="img/link-icon.svg">
                         </div>
                     </a>  
                 </div>        
@@ -146,47 +149,47 @@
                 </div>
                 <ul class="skills-list">
                     <li class="skills-item" id="html-logo">
-                        <img src="img/html-logo-black.svg" alt="javascript logo">
+                        <img loading="lazy" src="img/html-logo-black.svg" alt="javascript logo">
                     </li>
                     <li class="skills-item" id="css-logo">
-                        <img src="img/css-logo-black.svg" alt="javascript logo">
+                        <img loading="lazy" src="img/css-logo-black.svg" alt="javascript logo">
                     </li>
                     <li class="skills-item" id="javascript-logo">
-                        <img src="img/javascript-logo-black.svg" alt="javascript logo">
+                        <img loading="lazy" src="img/javascript-logo-black.svg" alt="javascript logo">
                     </li>
                     <li class="skills-item" id="nodejs-logo">
-                        <img src="img/nodejs-logo-black.svg" alt="javascript logo">
+                        <img loading="lazy" src="img/nodejs-logo-black.svg" alt="javascript logo">
                     </li>
                     <li class="skills-item" id="express-logo">
-                        <img src="img/express-logo-black.svg" alt="javascript logo">
+                        <img loading="lazy" src="img/express-logo-black.svg" alt="javascript logo">
                     </li>
                     <li class="skills-item" id="figma-logo">
-                        <img src="img/figma-logo-black.svg" alt="javascript logo">
+                        <img loading="lazy" src="img/figma-logo-black.svg" alt="javascript logo">
                     </li>
                     <li class="skills-item" id="git-logo">
-                        <img src="img/git-logo-svg.svg" alt="javascript logo">
+                        <img loading="lazy" src="img/git-logo-svg.svg" alt="javascript logo">
                     </li>
                     <li class="skills-item" id="git-bash-logo">
-                        <img src="img/git-bash-logo-black.svg" alt="javascript logo">
+                        <img loading="lazy" src="img/git-bash-logo-black.svg" alt="javascript logo">
                     </li>
                     <li class="skills-item" id="vsc-logo">
-                        <img src="img/vsc-logo-black.svg" alt="javascript logo">
+                        <img loading="lazy" src="img/vsc-logo-black.svg" alt="javascript logo">
                     </li>
                     <li class="skills-item" id="sublime-logo">
-                        <img src="img/sublime-logo-black.svg" alt="javascript logo">
+                        <img loading="lazy" src="img/sublime-logo-black.svg" alt="javascript logo">
                     </li>
                     <li class="skills-item" id="c-logo">
-                        <img src="img/c-logo-black.svg" alt="javascript logo">
+                        <img loading="lazy" src="img/c-logo-black.svg" alt="javascript logo">
                     </li>
                     <li class="skills-item" id="cplus-logo">
-                        <img src="img/cplusplus-logo-black.svg" alt="javascript logo">
+                        <img loading="lazy" src="img/cplusplus-logo-black.svg" alt="javascript logo">
                     </li>
                 </ul>
                 <div class="social-media">
                     <h3 class="subtitle black">Get in touch</h3>
                     <ul class="social-media-list">
-                        <li class="social-media-item"><img src="img/linkedin-logo-black.svg" alt="linkedin logo"></li>
-                        <li class="social-media-item"><img src="img/github-logo-black.svg" alt="github logo"></li>
+                        <li class="social-media-item"><img loading="lazy" src="img/linkedin-logo-black.svg" alt="linkedin logo"></li>
+                        <li class="social-media-item"><img loading="lazy" src="img/github-logo-black.svg" alt="github logo"></li>
                     </ul>
                 </div>
             </div>
@@ -226,8 +229,5 @@
             </div>
         </section>
     </div>
-    <script src="gear-animation.js"></script>
-    <script src="particle-mouse-animation.js"></script>
-    <script src="contact-bg.js"></script>
 </body>
 </html>

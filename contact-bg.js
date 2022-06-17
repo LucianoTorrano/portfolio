@@ -1,4 +1,5 @@
-const contactContainer = document.getElementById('contact');
+window.addEventListener('load',()=>{
+    const contactContainer = document.getElementById('contact');
 const canvasBg = document.getElementById('canvas-contact');
 const context = canvasBg.getContext('2d');
 
@@ -21,5 +22,5 @@ function drawBg(){
     context.fillStyle = contactBgColor;
     context.fill();
 }
-
 drawBg();
+})

@@ -13,6 +13,7 @@
     --gray-color: #1c1c1c;
     --skills-text-color: #000000;
     --contact-text-color: #adadad;
+    --light-gray-color: #E4E2E2;
     --title-size: 3.5em;
     --subtitle-size: 2em;
     --work-title-size: 1.8em;
@@ -97,7 +98,7 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--button-bg-green);
     color: black;
     padding: 8px;
-    border-radius: 3px;
+    border-radius: 2px;
     font-weight: 600;
 
 }
@@ -149,7 +150,10 @@ body::-webkit-scrollbar-thumb{
     right: 20px;
     width: 600px;
 }
-
+.hero-button:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
 /*****************/
 /* ABOUT SECTION */
 /*****************/
@@ -207,7 +211,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     flex-direction: column;
     gap: 200px;
-    margin: 100px 0;
+    padding: 100px 0;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -284,7 +288,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top:  50px;
 }
 .see-more-btn{
     background-color: black;
@@ -323,8 +327,9 @@ body::-webkit-scrollbar-thumb{
 .gray-bg{
     background-color: var(--gray-color);
 }
-
-
+.light-gray-bg{
+    background-color: var(--light-gray-color);
+}
 /*********************/
 /** CONTACT SECTION **/
 /*********************/
