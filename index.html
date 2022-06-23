@@ -11,6 +11,7 @@
     <script defer src="gear-animation.js"></script>
     <script defer src="particle-mouse-animation.js"></script>
     <script defer src="contact-bg.js"></script>
+    <script defer src="menu-responsive.js"></script>
 </head>
 <body id="body">
     <img src="img/tuerca.png" alt="tuerca" id="gear-big" class="gear">
@@ -25,11 +26,24 @@
             <div class="space-between"></div>
             <div class="nav-options">
                 <ul class="nav-options-list">
-                    <li class="nav-option-item"><a href="#" class="link line-hover">Home</a></li>
-                    <li class="nav-option-item"><a href="#about" class="link line-hover">About me</a></li>
-                    <li class="nav-option-item"><a href="#works" class="link line-hover">Works</a></li>
-                    <li class="nav-option-item hero-button"><a href="#contact" class="button link">Contact</a></li>
+                    <li class="nav-options-item"><a href="#" class="link line-hover">Home</a></li>
+                    <li class="nav-options-item"><a href="#about" class="link line-hover">About me</a></li>
+                    <li class="nav-options-item"><a href="#works" class="link line-hover">Works</a></li>
+                    <li class="nav-options-item hero-button"><a href="#contact" class="button link">Contact</a></li>
                 </ul>
+            </div>
+            <div class="menu-btn-box inactive">
+                <div class="top-line">
+                    <span class="btn-line" id="top-left"></span>
+                    <span class="btn-line" id="top-middle"></span>
+                    <span class="btn-line" id="top-right"></span>
+                </div>
+                <div class="btn-line middle-line" id="middle"></div>
+                <div class="bottom-line">
+                    <span class="btn-line" id="bottom-left"></span>
+                    <span class="btn-line" id="bottom-middle"></span>
+                    <span class="btn-line" id="bottom-right"></span>
+                </div>
             </div>
         </nav>
         <section class="hero" id="home">
@@ -40,9 +54,9 @@
                 <h2 class="subtitle">Web Designer - UX/UI</h2>
                 <div class="button-container">
                     <ul class="button-list">
-                        <li class="nav-option-item  hero-button"><a title="My cv" href="#" class="button link light-gray-bg hero-button" target="__blank">My CV</a></li>
-                        <li class="nav-option-item"><a title="Github" href="https://github.com/LucianoTorrano" target="__blank"><img loading="lazy" src="img/github-logo.svg" alt="logo de github"></a></li>
-                        <li class="nav-option-item hero-button"><a title="Contact me" href="#contact" class="button link">Contact</a></li>
+                        <li class="nav-options-item  hero-button"><a title="My cv" href="https://drive.google.com/file/d/1aiqXU5osogoWAvIUzKXyYTYuzCsDN168/view?usp=sharing" class="button link light-gray-bg hero-button" target="_blank">My CV</a></li>
+                        <li class="nav-options-item"><a title="Github" href="https://github.com/LucianoTorrano" target="_blank"><img class="hero-button" loading="lazy" src="img/github-logo.svg" alt="logo de github"></a></li>
+                        <li class="nav-options-item hero-button"><a title="Contact me" href="#contact" class="button link">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -103,7 +117,7 @@
                         <a title="Todo Re-suelto website" href="https://www.todoresueltocampana.com.ar" target="_blank"><img src="img/todoresuelto.jpg" alt="probermusic" class="proyect-img"></a>
                     </li>
                     <li class="works-item">
-                        <a href="https://films-to-see.herokuapp.com/" target="_blank"><img src="img/save-your-films.jpg" alt="probermusic" class="proyect-img"></a>
+                        <a href="https://save-your-films.herokuapp.com/" target="_blank"><img src="img/save-your-films.jpg" alt="probermusic" class="proyect-img"></a>
                         <div class="works-info-container">
                             <h3 class="works-item-title black">Natural Warehouse website</h3>
                             <div class="technologies">
@@ -115,7 +129,7 @@
                                 </ul>
                             </div>
                             <ul class="button-list">
-                                <li class="nav-option-item"><a title="Save your Films website" href="https://films-to-see.herokuapp.com/" class="button link button-works gray-bg white black-work-hover" target="_blank">Online view</a></li>
+                                <li class="nav-option-item"><a title="Save your Films website" href="https://save-your-films.herokuapp.com/" class="button link button-works gray-bg white black-work-hover" target="_blank">Online view</a></li>
                                 <li class="nav-option-item black-bg"><a title="Save your Films Figma Design" href="https://www.figma.com/file/QhfwpyF63HZSplD8wGmzkz/Films-website?node-id=0%3A1" class="button link button-works gray-bg white black-work-hover" target="_blank">Figma Design</a></li>
                                 <li class="nav-option-item black-bg"><a title="Save your Films Github repository" href="https://github.com/LucianoTorrano" class="button link button-works gray-bg white black-work-hover" target="_blank">Git Repository</a></li>
                             </ul>

@@ -8,7 +8,7 @@ const c = canvas.getContext('2d');
 const nav = document.querySelector('nav');
 
 canvas.width = body.offsetWidth;
-canvas.height = container.offsetHeight;
+canvas.height = container.offsetHeight*2;
 
 let relativeGearPosX = (canvas.width - nav.offsetWidth)/2;
 let relativeMousePosY2=0;
