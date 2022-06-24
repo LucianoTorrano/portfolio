@@ -109,6 +109,7 @@ body::-webkit-scrollbar-thumb{
 .button-list{
     justify-content: start;
     gap: 30px;
+    flex-wrap: wrap
 }
 
 /* BOTON DEL MENU RESPONSIVE */
@@ -328,10 +329,13 @@ body::-webkit-scrollbar-thumb{
 .technologies{
     display: flex;
     gap: 15px;
+    width: 400px;
 }
 .technologies-list{
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
+    list-style: none;
 }
 .button-works{
     border-radius: 0;
@@ -730,6 +734,9 @@ textarea:focus, input:focus{
      .nav-active{
         transform: translateY(-4%);
      }
+     .text-container{
+        width: 100%;
+     }
      .video-game-img,.guitar-img{
         width: 250px;
      }
@@ -744,7 +751,7 @@ textarea:focus, input:focus{
         margin-top: 100px;
      }
      .splash-bg{
-        top: 70px;
+        top: 170px;
         width: 660px;
      }
      .about{
@@ -817,7 +824,49 @@ textarea:focus, input:focus{
 
 /* Mobile L */
 @media screen and (max-width: 425px){
-    
+    :root{
+        --title-size: 2.2em;
+        --subtitle-size: 1.5em;
+        --work-title-size: 1.2em;
+    }
+    .text-container{
+        margin: 100px auto;
+        text-align: center;
+        padding: 0;
+    }
+    .button-list{
+        justify-content: center;
+    }
+    .splash-bg{
+        top: 320px;
+        width: 360px;
+    }
+    .banner-img{
+        width: 310px;
+        margin-top: 275px;
+    }
+    .about-title span{
+        color: white;
+    }
+    .about-text{
+        padding-top: 75px;
+        font-size: .85em;
+    }
+    .video-game-img,.guitar-img{
+        width: 200px;
+        top: 550px;
+    }
+    .guitar-img{
+        top: 700px;
+    }
+    .works-item-img-link,.works-item-img-link img{
+        width: 325px;
+    }
+    .technologies{
+        justify-content: center;
+        margin: auto;
+        width: 325px;
+    }
 }
 
 /* Mobile S */
