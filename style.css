@@ -118,7 +118,9 @@ body::-webkit-scrollbar-thumb{
     height: 40px;
     background-color: var(--skills-text-color);
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    top: 10px;
+    right: 20px;
     flex-direction: column ;
     justify-content: space-between;
     cursor: pointer;
@@ -155,7 +157,6 @@ body::-webkit-scrollbar-thumb{
 }
 #middle{
     top: 48%;
-    width: 100%;
     background-color: var(--green-detail-color);
 }
 #bottom-left{
@@ -387,7 +388,9 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
 }
 
-
+.reverse-wrap{
+    flex-wrap: wrap-reverse;
+}
 /***************************/
 /** CANVAS MOUSE PARTICLE **/
 /***************************/
@@ -402,7 +405,6 @@ body::-webkit-scrollbar-thumb{
     z-index: 10;
     position: absolute;
 }
-
 .black{
     color: black;
 }
@@ -437,7 +439,7 @@ body::-webkit-scrollbar-thumb{
 .alignment-skills-title{
     width: 350px;
 }
-.top-line,.bottom-line{
+.title-top-line,.title-bottom-line{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -445,14 +447,14 @@ body::-webkit-scrollbar-thumb{
     justify-content: end;
     height: 3px;
 }
-.bottom-line{
+.title-bottom-line{
     justify-content: start;
 }
-.middle-line{
+.title-middle-line{
     width: 10%;
     background-color: var(--skills-text-color);
 }
-.right-line,.left-line{
+.title-right-line,.title-left-line{
     width: 35%;
     background-color: var(--skills-text-color);
 }
@@ -481,8 +483,17 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 40px;
-    padding-top: 20px;
+    gap: 20px;
+}
+.social-media-item img{
+    width: 40px;
+}
+.social-media-item img:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.social-media-item img:active{
+    transform: scale(1);
 }
 .skills-item::after{
     content: '';
@@ -554,7 +565,7 @@ body::-webkit-scrollbar-thumb{
     gap: 50px;
     color: var(--contact-text-color);
 }
-.contact-title-container{
+.contact-title-container,.skills-title-container{
     width: 100%;
     width: fit-content;
     display: flex;
@@ -644,7 +655,7 @@ textarea:focus, input:focus{
 /* Laptop L */
 @media screen and (max-width: 1440px){
     .hero,.about{
-        min-height: 110vh;
+        min-height: 120vh;
     }
 }
 
@@ -681,6 +692,11 @@ textarea:focus, input:focus{
 
 /* Tablet */
 @media screen and (max-width: 768px){
+    :root{
+        --title-size: 2.5em;
+        --subtitle-size: 1.5em;
+        --work-title-size: 1.2em;
+    }
     canvas{
         display: none;
     }
@@ -714,6 +730,89 @@ textarea:focus, input:focus{
      .nav-active{
         transform: translateY(-4%);
      }
+     .video-game-img,.guitar-img{
+        width: 250px;
+     }
+     .video-game-img{
+        top: 480px;
+        left: 20px;
+     }
+     .guitar-img{
+        right: 20px;
+     }
+     .text-container{
+        margin-top: 100px;
+     }
+     .splash-bg{
+        top: 70px;
+        width: 660px;
+     }
+     .about{
+        padding-left: 0;
+     }
+     .about-title{
+        width: 100%;
+        text-align: center;
+     }
+     .about-text{
+        max-width: 350px;
+        font-size: .8em;
+     }
+     .green-bg{
+        background-color: var(--green-detail-color);
+    }
+     .works-list{
+        justify-content: space-evenly;
+        gap: unset;
+        padding-bottom: 0;
+     }
+     .works-item{
+        justify-content: center;
+        padding: 40px 0;
+    }
+    .see-more-btn-container{
+        margin: 0;
+        padding-top: 40px;
+        background-color: var(--green-detail-color);
+    }
+    .contact{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .skills{
+        background-color: var(--green-detail-color);
+        padding-top: 120px;
+        text-align: center;
+    }
+    .skills-list{
+        justify-content: space-evenly;
+    }
+    .alignment-skills-title{
+        width: 0;
+        text-align: center;
+    }
+    .skills-title-container{
+        transform: translateX(-50%);
+    }
+    .social-media-list{
+        justify-content: center;
+    }
+    .form{
+        width: 80%;
+        margin: auto;
+    }
+    .name-container,.mail-container,.mail-example,.company-container{
+        width: 100%;
+    }
+    .contact-container{
+        padding-bottom: 200px;
+        justify-content: space-between;
+    }
+    .contact-title-container{
+        margin: auto;
+    }
 }
 
 /* Mobile L */
