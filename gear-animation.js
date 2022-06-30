@@ -1,4 +1,6 @@
-const tuercaImg = document.getElementById('gear-big');
+addEventListener('load',()=>{
+
+    const tuercaImg = document.getElementById('gear-big');
 const tuercaImgMedium = document.getElementById('gear-medium');
 const tuercaImgSmall = document.getElementById('gear-small');
 const container = document.getElementById('home');
@@ -112,3 +114,5 @@ function animate(){
     })
 }
 animate();
+
+})

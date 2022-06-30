@@ -659,7 +659,7 @@ textarea:focus, input:focus{
 /* Laptop L */
 @media screen and (max-width: 1440px){
     .hero,.about{
-        min-height: 120vh;
+        min-height: 130vh;
     }
 }
 
