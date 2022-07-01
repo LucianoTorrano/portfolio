@@ -246,7 +246,7 @@ body::-webkit-scrollbar-thumb{
 /*****************/
 
 .about{
-    min-height: 85vh;
+    min-height: 100vh;
     width: 100%;
     color: var(--text-color);
     z-index: 400;
@@ -715,7 +715,7 @@ textarea:focus, input:focus{
         height: 100vh;
 		width: 100%;
 		background-color: var(--skills-text-color);
-		top: 90px;
+		top: 80px;
 		right: 0;
         padding-bottom: 40px;
 		flex-direction: column;

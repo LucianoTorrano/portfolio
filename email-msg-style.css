@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+:root{
+    --success-color: #25A171;
+    --error-color: #710C0C;
+    --bg-color: #000;
+    --text-color: #fff;
+    --btn-text-color: #fff;
+}
+body{
+    background-color: var(--bg-color);
+
+}
+.error-bg-color{
+    background-color: var(--error-color);
+}
+.error-color{
+    color: var(--error-color);
+}
+.success-bg-color{
+    background-color: var(--success-color);
+}
+.success-color{
+    color: var(--success-color);
+}
+.message{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.bg-img{
+	position: absolute;
+}
+.lines-bg{
+	left: 5%;
+	max-height: 100%;
+}
+.square-bg{
+	right: 5%;
+}
+.square-bg-bottom{
+	bottom: 0%;
+	right: 5%;
+}
+.message-container{
+    width: 100%;
+    max-width: 75em;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.message-title{
+	font-size: 4em;
+	letter-spacing: -.04em;
+	text-align: center;
+	padding: 1em 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.user-message-container{
+    width: 100%;
+    text-align: center;
+}
+.message-subtitle{
+    font-size: 2.3em;
+    letter-spacing: -.01em;
+}
+.message-text{
+    font-size: 1.3em;
+    letter-spacing: -.01em;
+}
+.button-link{
+    text-align: center;
+    text-decoration: none;
+	padding: .3em 3em;
+    border-radius: 0.1em;
+	color: var(--btn-text-color);
+	z-index: 100;
+}
+.button-link:hover{
+	transition: .3s;
+	transform: translate(-.05em,-.05em);
+	box-shadow: 10px 10px 5px 0px rgba(19, 19, 19, 0.75);
+}
+.social-media-title{
+	font-size: 2em;
+	text-align: center;
+	color: var(--text-color);
+	padding: .5em 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.social-media-list{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+
+.social-media__item i{
+	padding: .6em;
+	font-size: 2.5em;
+    color: var(--text-color);
+}
+
+.social-media__item i:hover{
+	color: var(--success-color);
+}
+.error-hover i:hover{
+    color: var(--error-color);
+}
+
+@media all and (max-width:1600px){
+	.lines-bg{
+		display: none;
+	}
+	.square-bg-bottom{
+		left: 5%;
+	}
+}
+
+@media all and (max-width:768px){
+.social-media-title{
+    font-size: 1.5em;
+}
+.working-img{
+    width: 250px;
+}
+.message-title{
+    font-size: 2.3em;
+}
+.title-decoration{
+    width: 150px;
+}
+.user-message-container{
+    font-size: .6em;
+}
+}
