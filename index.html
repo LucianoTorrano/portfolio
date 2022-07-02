@@ -12,6 +12,7 @@
     <script src="particle-mouse-animation.js"></script>
     <script defer src="contact-bg.js"></script>
     <script defer src="menu-responsive.js"></script>
+    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body id="body">
     <img src="img/tuerca.png" alt="tuerca" id="gear-big" class="gear">
@@ -65,9 +66,9 @@
             <img loading="lazy" src="img/guitar.svg" alt="playing guitar" class="guitar-img">
             <img loading="lazy" src="img/video-game-img.svg" alt="playing video-games" class="video-game-img">
             <h2 class="title about-title">About <span class="black">Me</span></h2>
-            <p class="about-text"> Hola! Me llamo Luciano, soy estudiante de ingeniería electrónica en la Universidad de Buenos Aires, lugar donde aprendí mis primeros lenguajes de programación (C y C++). Con el pasar de los años encontré una nueva pasión por el desarrollo web.
-                <br><br>Comencé a estudiar de forma autodidacta, lo que me llevo a crear mis primeras páginas web. Disfruto aprender nuevas tecnologías y de esta forma tener más herramientas para mis futuros proyectos. 
-                <br><br>Actualmente estoy buscando mi primera experiencia laboral. Espero ser el perfil que estas buscando, en el caso de serlo, no dudes en contactarme.
+            <p class="about-text"> Hi! My name is Luciano, I'm an electronic engineer student in the University of Buenos Aires, where I learned my first programming languages (C and C++). After some years, I've found a new passion for web development.
+                <br><br>I started studying as a self-taught programmer, which led me to create my first websites. I enjoy learning new technologies in order to have more tools for my future projects.
+                <br><br>I'm looking for my first working experience as a front-end developer. I hope I am the person you need, if you are interested in my profile let's get in touch!
               </p>
         </section>
         <section class="works" id="works">
@@ -88,12 +89,6 @@
                                     <li><img src="img/html-logo.svg" alt="HTML5 Logo"></li>
                                     <li><img src="img/javascript-logo.svg" alt="Javascript Logo"></li>
                                     <li><img src="img/css-logo.svg" alt="CSS3 Logo"></li>
-                                    <li><img src="img/html-logo.svg" alt="HTML5 Logo"></li>
-                                    <li><img src="img/javascript-logo.svg" alt="Javascript Logo"></li>
-                                    <li><img src="img/css-logo.svg" alt="CSS3 Logo"></li>
-                                    <li><img src="img/html-logo.svg" alt="HTML5 Logo"></li>
-                                    <li><img src="img/javascript-logo.svg" alt="Javascript Logo"></li>
-                                    <li><img src="img/css-logo.svg" alt="CSS3 Logo"></li>
                                 </ul>
                             </div>
                             <ul class="button-list">
@@ -109,9 +104,16 @@
                             <div class="technologies">
                                 <h4 class="technologies-text">Technologies:</h4>
                                 <ul class="technologies-list">
-                                    <li><img src="img/html-logo.svg" alt="HTML5 Logo"></li>
-                                    <li><img src="img/javascript-logo.svg" alt="Javascript Logo"></li>
-                                    <li><img src="img/css-logo.svg" alt="CSS3 Logo"></li>
+                                    <li><img class="technologies-logo" src="img/html-logo.svg" alt="HTML5 Logo"></li>
+                                    <li><img class="technologies-logo" src="img/javascript-logo.svg" alt="Javascript Logo"></li>
+                                    <li><img class="technologies-logo" src="img/css-logo.svg" alt="CSS3 Logo"></li>
+                                    <li><img class="technologies-logo" src="img/nodejs-logo-white.svg" alt="NodeJS Logo"></li>
+                                    <li><img class="technologies-logo" src="img/express-logo-white.svg" alt="Express Logo"></li>
+                                    <li><img class="technologies-logo" src="img/docsheet.svg" alt="Google sheets Logo"></li>
+                                    <li><img class="technologies-logo" src="img/vsc-logo-white.svg" alt="Visual Studio Code Logo"></li>
+                                    <li><img class="technologies-logo" src="img/handlebars-logo-white.svg" alt="Handlebars Logo"></li>
+                                    <li><img class="technologies-logo" src="img/heroku-white.svg" alt="Heroku Logo"></li>
+                                    <li><img class="technologies-logo" src="img/figma-logo-white.svg" alt="Figma Logo"></li>
                                 </ul>
                             </div>
                             <ul class="button-list">
@@ -129,18 +131,25 @@
                             <div class="technologies">
                                 <h4 class="technologies-text black">Technologies:</h4>
                                 <ul class="technologies-list">
-                                    <li><img src="img/html-logo-black.svg" alt="HTML5 Logo"></li>
-                                    <li><img src="img/javascript-logo-black.svg" alt="Javascript Logo"></li>
-                                    <li><img src="img/css-logo-black.svg" alt="CSS3 Logo"></li>
+                                    <li><img class="technologies-logo" src="img/html-logo-black.svg" alt="HTML5 Logo"></li>
+                                    <li><img class="technologies-logo" src="img/javascript-logo-black.svg" alt="Javascript Logo"></li>
+                                    <li><img class="technologies-logo" src="img/scss-logo-black.svg" alt="Sass Logo"></li>
+                                    <li><img class="technologies-logo" src="img/nodejs-logo-black.svg" alt="NodeJS Logo"></li>
+                                    <li><img class="technologies-logo" src="img/express-logo-black.svg" alt="Express Logo"></li>
+                                    <li><img class="technologies-logo" src="img/mysql.svg" alt="Mysql Logo"></li>
+                                    <li><img class="technologies-logo" src="img/vsc-logo-black.svg" alt="Visual Studio Code Logo"></li>
+                                    <li><img class="technologies-logo" src="img/handlebars-logo-black.svg" alt="Handlebars Logo"></li>
+                                    <li><img class="technologies-logo" src="img/heroku-black.svg" alt="Heroku Logo"></li>
+                                    <li><img class="technologies-logo" src="img/figma-logo-black.svg" alt="Figma Logo"></li>
                                 </ul>
                             </div>
                             <ul class="button-list">
                                 <li class="nav-option-item"><a title="Save your Films website" href="https://save-your-films.herokuapp.com/" class="button link button-works gray-bg white black-work-hover" target="_blank">Online view</a></li>
                                 <li class="nav-option-item black-bg"><a title="Save your Films Figma Design" href="https://www.figma.com/file/QhfwpyF63HZSplD8wGmzkz/Films-website?node-id=0%3A1" class="button link button-works gray-bg white black-work-hover" target="_blank">Figma Design</a></li>
-                                <li class="nav-option-item black-bg"><a title="Save your Films Github repository" href="https://github.com/LucianoTorrano" class="button link button-works gray-bg white black-work-hover" target="_blank">Git Repository</a></li>
+                                <li class="nav-option-item black-bg"><a title="Save your Films Github repository" href="https://github.com/LucianoTorrano/save-your-films" class="button link button-works gray-bg white black-work-hover" target="_blank">Git Repository</a></li>
                             </ul>
                         </div>
-                    </li>                
+                    </li>
                 </ul>
                 <div class="see-more-btn-container">
                     <a href="see-more.html" title="See More" class="link see-more-btn button-works gray-bg white black-work-hover">
@@ -154,6 +163,7 @@
         <section class="contact" id="contact">
             <canvas class="canvas-contact" id="canvas-contact"></canvas>
             <div class="skills">
+                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_l3qxn9jy.json"  background="transparent"  speed=".8"  style="position:absolute;width: 250px; height: 250px; filter: sepia(80%) hue-rotate(98deg);top:30%;left: 50%;transform:translate(-50%,-50%);"  loop  autoplay></lottie-player>
                 <div class="alignment-skills-title">
                     <div class="skills-title-container">
                         <div class="title-top-line">
@@ -248,6 +258,10 @@
                 </form>
             </div>
         </section>
+        <footer class="footer">
+            <p>© copyright all rights reserved.</p>
+            <p>Web development made by Luciano Torrano</p>
+        </footer>
     </div>
 </body>
 </html>

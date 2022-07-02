@@ -259,6 +259,7 @@ body::-webkit-scrollbar-thumb{
     text-align: start;
     margin: auto;
     padding-top: 50px;
+    line-height: 150%;
 }
 .guitar-img{
     position: absolute;
@@ -314,8 +315,10 @@ body::-webkit-scrollbar-thumb{
 .works-item-title{
     text-align: center;
     font-size: var(--work-title-size);
+    font-weight: 600;
+    letter-spacing: .5px;
 }
-.works-item-title,.technologies-text,.button-works{
+.technologies-text,.button-works{
     font-weight: 200;
 }
 .works-info-container{
@@ -333,9 +336,12 @@ body::-webkit-scrollbar-thumb{
 }
 .technologies-list{
     display: flex;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
     list-style: none;
+}
+.technologies-logo{
+    width: 40px;
 }
 .button-works{
     border-radius: 0;
@@ -435,10 +441,9 @@ body::-webkit-scrollbar-thumb{
 }
 .skills,.contact-container{
     z-index: 200;
-    padding: 50px 0;
+    padding: 50px 0 0 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .alignment-skills-title{
     width: 350px;
@@ -561,7 +566,7 @@ body::-webkit-scrollbar-thumb{
 /*** FORM *****/
 /**************/
 .contact{
-    padding: 150px 20px 0 0;
+    padding: 150px 20px 100px 20px;
 }
 .contact-container{
     justify-content: end;
@@ -651,6 +656,17 @@ textarea:focus, input:focus{
 .form-button:hover{
     background-color: var(--button-bg-green);
     transition: .4s;
+}
+
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    gap: 50px;
+    font-size: .9em;
 }
 
 
