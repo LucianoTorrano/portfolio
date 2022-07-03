@@ -342,6 +342,7 @@ body::-webkit-scrollbar-thumb{
 }
 .technologies-logo{
     width: 40px;
+    height: 40px;
 }
 .button-works{
     border-radius: 0;
@@ -561,7 +562,15 @@ body::-webkit-scrollbar-thumb{
 .canvas-contact{
     position: absolute;
 }
-
+.spaceship-animation{
+    position:absolute;
+    width: 250px; 
+    height: 250px; 
+    filter: sepia(80%) hue-rotate(98deg);
+    top:30%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
 /**************/
 /*** FORM *****/
 /**************/
@@ -631,8 +640,11 @@ textarea:focus, input:focus{
 .company-container{
     width: 80%;
 }
+.msg-container{
+    width: 95%;
+}
 .form-button-container{
-    width: 100%;
+    width: 95%;
     position: relative;
 }
 .form-button{
@@ -657,7 +669,10 @@ textarea:focus, input:focus{
     background-color: var(--button-bg-green);
     transition: .4s;
 }
-
+.form-button:active{
+    background-color: var(--active-gray-bg-color);
+    transition: background-color 0s;
+}
 /* FOOTER */
 .footer{
     display: flex;
@@ -806,8 +821,9 @@ textarea:focus, input:focus{
     }
     .skills{
         background-color: var(--green-detail-color);
-        padding-top: 120px;
+        padding: 120px 0 0 0;
         text-align: center;
+        align-items: center;
     }
     .skills-list{
         justify-content: space-evenly;
@@ -822,6 +838,9 @@ textarea:focus, input:focus{
     .social-media-list{
         justify-content: center;
     }
+    .spaceship-animation{
+        display: none;
+    }
     .form{
         width: 80%;
         margin: auto;
@@ -830,11 +849,15 @@ textarea:focus, input:focus{
         width: 100%;
     }
     .contact-container{
-        padding-bottom: 200px;
+        padding:50px 0 200px 0;
         justify-content: space-between;
     }
     .contact-title-container{
         margin: auto;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 10px
     }
 }
 
