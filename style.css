@@ -227,7 +227,7 @@ body::-webkit-scrollbar-thumb{
     right: 0;
     top: 100px;
     width: 950px;
-    z-index: 300;
+    z-index: 20;
 }
 .banner-img{
     margin-top: 100px;
@@ -246,7 +246,7 @@ body::-webkit-scrollbar-thumb{
 /*****************/
 
 .about{
-    min-height: 100vh;
+    min-height: 55em;
     width: 100%;
     color: var(--text-color);
     z-index: 400;
@@ -689,8 +689,8 @@ textarea:focus, input:focus{
 
 /* Laptop L */
 @media screen and (max-width: 1440px){
-    .hero,.about{
-        min-height: 130vh;
+    .hero{
+        min-height: 65em;
     }
 }
 
@@ -701,8 +701,8 @@ textarea:focus, input:focus{
         --subtitle-size: 1.7em;
         --work-title-size: 1.5em;
     }
-    .hero{
-        min-height: 100vh;
+    .hero,.about{
+        min-height: 45em;
     }
     .splash-bg{
         width: 800px;
