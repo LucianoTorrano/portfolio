@@ -1,0 +1,18 @@
+#speech-bubble{
+    animation: fade-in-out 3s ease-in-out infinite;
+}
+
+@keyframes fade-in-out {
+    0%{
+        opacity: .5;
+        transform: translateY(10px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: .5;
+        transform: translateY(10px);
+    }
+}
