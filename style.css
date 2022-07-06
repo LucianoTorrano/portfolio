@@ -263,14 +263,15 @@ body::-webkit-scrollbar-thumb{
 }
 .guitar-img{
     position: absolute;
-    right: 0;
-    top: 550px;
-    width: 300px;
+    right: -100px;
+    top: 250px;
+    width: 500px;
 }
 .video-game-img{
     position: absolute;
-    left: 0;
-    top: 450px;
+    width: 500px;
+    left: -100px;
+    top: 150px;
 }
 
 /*****************/
