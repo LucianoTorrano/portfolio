@@ -227,7 +227,7 @@ body::-webkit-scrollbar-thumb{
     right: 0;
     top: 100px;
     width: 950px;
-    z-index: 20;
+    z-index: 300;
 }
 .banner-img{
     margin-top: 100px;
@@ -246,7 +246,7 @@ body::-webkit-scrollbar-thumb{
 /*****************/
 
 .about{
-    min-height: 55em;
+    min-height: 100vh;
     width: 100%;
     color: var(--text-color);
     z-index: 400;
@@ -263,15 +263,15 @@ body::-webkit-scrollbar-thumb{
 }
 .guitar-img{
     position: absolute;
-    right: -100px;
-    top: 250px;
-    width: 500px;
+    right: 0;
+    top: 550px;
+    width: 250px;
 }
 .video-game-img{
     position: absolute;
-    width: 500px;
-    left: -100px;
-    top: 150px;
+    left: 0;
+    top: 450px;
+    width: 250px;
 }
 
 /*****************/
@@ -690,8 +690,8 @@ textarea:focus, input:focus{
 
 /* Laptop L */
 @media screen and (max-width: 1440px){
-    .hero{
-        min-height: 65em;
+    .hero,.about{
+        min-height: 130vh;
     }
 }
 
@@ -702,8 +702,8 @@ textarea:focus, input:focus{
         --subtitle-size: 1.7em;
         --work-title-size: 1.5em;
     }
-    .hero,.about{
-        min-height: 45em;
+    .hero{
+        min-height: 100vh;
     }
     .splash-bg{
         width: 800px;
