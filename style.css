@@ -690,8 +690,11 @@ textarea:focus, input:focus{
 
 /* Laptop L */
 @media screen and (max-width: 1440px){
-    .hero,.about{
-        min-height: 130vh;
+    .hero{
+        min-height: 700px;
+    }
+    .about{
+        min-height: 800px;
     }
 }
 
@@ -701,9 +704,6 @@ textarea:focus, input:focus{
         --title-size: 3.2em;
         --subtitle-size: 1.7em;
         --work-title-size: 1.5em;
-    }
-    .hero{
-        min-height: 100vh;
     }
     .splash-bg{
         width: 800px;
@@ -732,6 +732,9 @@ textarea:focus, input:focus{
         --title-size: 2.5em;
         --subtitle-size: 1.5em;
         --work-title-size: 1.2em;
+    }
+    .page-container{
+        width: 100%;
     }
     canvas{
         display: none;
@@ -869,6 +872,9 @@ textarea:focus, input:focus{
         --subtitle-size: 1.5em;
         --work-title-size: 1.2em;
     }
+    .hero{
+        min-height: 700px;
+    }
     .text-container{
         margin: 100px auto;
         text-align: center;
@@ -884,6 +890,9 @@ textarea:focus, input:focus{
     .banner-img{
         width: 310px;
         margin-top: 275px;
+    }
+    .about{
+        min-height: 900px;
     }
     .about-title span{
         color: white;
@@ -909,9 +918,33 @@ textarea:focus, input:focus{
     }
 }
 
+/* Mobile M */
+@media screen and (max-width: 425px){
+    :root{
+        --title-size: 2em;
+        --subtitle-size: 1.4em;
+        --work-title-size: 1.1em;
+    }
+    .about-text{
+        padding-top: 50px;
+        max-width: 300px;
+    }
+    .guitar-img{
+        top: 750px;
+    }
+    .video-game-img{
+        top: 600px;
+    }
+}
+
+
 /* Mobile S */
 @media screen and (max-width: 375px){
     
+    .about-title{
+        text-align: start;
+        padding-left: 85px;
+    }
 }
 
 @keyframes navLinkFade{
