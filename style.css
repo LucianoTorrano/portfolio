@@ -769,27 +769,39 @@ textarea:focus, input:focus{
      .nav-active{
         transform: translateY(-4%);
      }
-     .text-container{
+     .hero{
+        min-height: 700px;
+    }
+    .text-container{
+        margin: 100px auto;
+        text-align: center;
+        padding: 0;
         width: 100%;
-     }
+        margin-top: 100px;
+    }
+    .button-list{
+        justify-content: center;
+    }
      .video-game-img,.guitar-img{
         width: 250px;
      }
      .video-game-img{
-        top: 480px;
+        top: 680px;
         left: 20px;
      }
      .guitar-img{
         right: 20px;
-     }
-     .text-container{
-        margin-top: 100px;
+        top: 750px;
      }
      .splash-bg{
-        top: 170px;
+        top: 300px;
         width: 660px;
      }
+     .banner-img{
+        top: 240px;
+     }
      .about{
+        min-height: 900px;
         padding-left: 0;
      }
      .about-title{
@@ -865,41 +877,58 @@ textarea:focus, input:focus{
     }
 }
 
-/* Mobile L */
-@media screen and (max-width: 425px){
+/* Mobile XL */
+
+@media screen and (max-width: 525px){
     :root{
         --title-size: 2.2em;
         --subtitle-size: 1.5em;
         --work-title-size: 1.2em;
     }
-    .hero{
-        min-height: 700px;
+    .splash-bg{
+        top: 260px;
+        width: 420px;
     }
-    .text-container{
-        margin: 100px auto;
-        text-align: center;
-        padding: 0;
+    .banner-img{
+        width: 350px;
+        top: 230px;
     }
-    .button-list{
+    .about-text{
+        padding-top: 75px;
+        font-size: .85em;
+    }
+    .about-title span{
+        color: white;
+    }
+    .video-game-img,.guitar-img{
+        width: 220px;
+        top: 550px;
+    }
+    .guitar-img{
+        top: 700px;
+    }
+    .works-item-img-link,.works-item-img-link img{
+        width: 400px;
+    }
+    .technologies{
         justify-content: center;
+        margin: auto;
+        width: 400px;
     }
+    .technologies-button-list-gap{
+        gap: 10px;
+    }
+}
+
+/* Mobile L */
+@media screen and (max-width: 440px){
     .splash-bg{
         top: 320px;
         width: 360px;
     }
     .banner-img{
         width: 310px;
-        margin-top: 275px;
-    }
-    .about{
-        min-height: 900px;
-    }
-    .about-title span{
-        color: white;
-    }
-    .about-text{
-        padding-top: 75px;
-        font-size: .85em;
+        top: 275px;
     }
     .video-game-img,.guitar-img{
         width: 200px;
@@ -918,32 +947,61 @@ textarea:focus, input:focus{
     }
 }
 
+
+
 /* Mobile M */
-@media screen and (max-width: 425px){
-    :root{
-        --title-size: 2em;
-        --subtitle-size: 1.4em;
-        --work-title-size: 1.1em;
+@media screen and (max-width: 375px){
+    .about-title{
+        text-align: start;
+        padding-left: 70px;
     }
     .about-text{
-        padding-top: 50px;
         max-width: 300px;
     }
-    .guitar-img{
-        top: 750px;
+    .technologies-button-list-gap{
+        gap: 30px;
     }
     .video-game-img{
         top: 600px;
     }
+    .guitar-img{
+        top: 775px;
+    }
 }
-
 
 /* Mobile S */
 @media screen and (max-width: 375px){
-    
+    :root{
+        --title-size: 1.8em;
+        --subtitle-size: 1.2em;
+        --work-title-size: 1em;
+    }
     .about-title{
-        text-align: start;
-        padding-left: 85px;
+        padding-left: 40px;
+    }
+    .title-line{
+        width: 200px;
+    }
+    .skills-list{
+        max-width: 300px;
+    }
+    .skills-item{
+        width: 40px;
+    }
+    .skills-item img{
+        width: 40px;
+        height: 40px;
+    }
+    .works-item-img-link,.works-item-img-link img{
+        width: 300px;
+    }
+    .technologies{
+        justify-content: center;
+        margin: auto;
+        width: 300px;
+    }
+    .footer{
+        font-size: .8em;
     }
 }
 
