@@ -5,10 +5,10 @@ document.getElementById('form')
         .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Enviando...';
+   btn.value = 'Sending...';
 
    const serviceID = 'default_service';
-   const templateID = 'template_6mqoz9r';
+   const templateID = 'template_2xc43b2';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {

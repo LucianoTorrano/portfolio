@@ -557,9 +557,9 @@
                                 </ul>
                             </div>
                             <ul class="button-list technologies-button-list-gap">
-                                <li class="nav-option-item"><a title="Probermusic website" target="_blank" href="https://www.probermusic.com" class="button link button-works">Online view</a></li>
+                                <li class="nav-option-item"><a title="Probermusic Website" target="_blank" href="https://www.probermusic.com" class="button link button-works">Online view</a></li>
                                 <li class="nav-option-item"><a title="Probermusic Figma Design" href="https://www.figma.com/file/jFMm3eihh7UpaMRTXyCOEz/Probermusic-web?node-id=0%3A1" target="_blank" class="button link button-works">Figma Design</a></li>
-                                <li class="nav-option-item"><a title="Probermusic github repository" href="https://github.com/LucianoTorrano/probermusic" target="_blank" class="button link button-works">Git Repository</a></li>
+                                <li class="nav-option-item"><a title="Probermusic Github repository" href="https://github.com/LucianoTorrano/probermusic" target="_blank" class="button link button-works">Git Repository</a></li>
                             </ul>
                         </div>
                     </li>
@@ -582,12 +582,12 @@
                                 </ul>
                             </div>
                             <ul class="button-list technologies-button-list-gap">
-                                <li class="nav-option-item"><a title="Todo Re-suelto website" href="https://www.todoresueltocampana.com.ar" class="button link button-works" target="_blank">Online view</a></li>
-                                <li class="nav-option-item"><a title="Todo Re-suelto figma design" href="https://www.figma.com/file/mmca7B6k7A5HBmB3BgGFxU/Todo-Re-Suelto?node-id=0%3A1" class="button link button-works" target="_blank">Figma Design</a></li>
-                                <li class="nav-option-item"><a title="Todo Re-suelto github repository" href="https://github.com/LucianoTorrano/TRS-prototype" class="button link button-works" target="_blank">Git Repository</a></li>
+                                <li class="nav-option-item"><a title="Todo Re-suelto Website" href="https://www.todoresueltocampana.com.ar" class="button link button-works" target="_blank">Online view</a></li>
+                                <li class="nav-option-item"><a title="Todo Re-suelto Figma design" href="https://www.figma.com/file/mmca7B6k7A5HBmB3BgGFxU/Todo-Re-Suelto?node-id=0%3A1" class="button link button-works" target="_blank">Figma Design</a></li>
+                                <li class="nav-option-item"><a title="Todo Re-suelto Github repository" href="https://github.com/LucianoTorrano/TRS-prototype" class="button link button-works" target="_blank">Git Repository</a></li>
                             </ul>
                         </div>
-                        <a class="works-item-img-link" title="Todo Re-suelto website" href="https://www.todoresueltocampana.com.ar" target="_blank"><img src="img/todoresuelto.jpg" alt="probermusic" class="proyect-img"></a>
+                        <a class="works-item-img-link" title="Todo Re-suelto Website" href="https://www.todoresueltocampana.com.ar" target="_blank"><img src="img/todoresuelto.jpg" alt="probermusic" class="proyect-img"></a>
                     </li>
                     <li class="works-item green-bg work3">
                         <a class="works-item-img-link" href="https://save-your-films.herokuapp.com/" target="_blank"><img src="img/save-your-films.jpg" alt="probermusic" class="proyect-img"></a>
@@ -617,7 +617,7 @@
                     </li>
                 </ul>
                 <div class="see-more-btn-container">
-                    <a href="see-more.html" title="See More" class="link see-more-btn button-works gray-bg white black-work-hover">
+                    <a href="see-more.html" title="See More page" class="link see-more-btn button-works gray-bg white black-work-hover">
                         <div class=" see-more-link">
                             <p>See More </p><img loading="lazy" alt="see more" src="img/link-icon.svg">
                         </div>
@@ -700,7 +700,7 @@
                         <div class="title-middle-line contact-line-bg"></div>
                     </div>
                 </div>
-                <form action="" class="form">
+                <form action="" class="form" id="form">
                     <div class="name-container form-container">
                         <label for="name" class="name-label">Name*</label>
                         <input type="text" name="name" id="name" class="cursor-text" required>
@@ -718,7 +718,7 @@
                         <textarea name="message" id="message" cols="70" rows="10" class="cursor-text" required></textarea>
                     </div>
                     <div class="form-button-container">
-                        <input type="submit" value="Send Message" class="form-button">
+                        <input id="button" type="submit" value="Send Message" class="form-button">
                     </div>
                 </form>
             </div>
@@ -731,5 +731,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CSSRulePlugin.min.js" integrity="sha512-oYnRsy+bFXYr+btXcKk2dpzfERnCUc5G4GkJ0AO/XSvomLV7Xc7tZVhTsYIz9QzOAw9qo/6qoA6JTpzaYuHUGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="gsap-animation.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="email-config.js"></script>
+    <script defer src="send-email.js"></script>
 </body>
 </html>
